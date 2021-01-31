@@ -21,15 +21,10 @@
           <img class="main-logo" src="img/logotip/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт">
         </a>
         <ul class="nav-shop">
-          <li>
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <input class="search type="search name="search" id="search-header">
-              <label for="search-header"></label>
-            </form>
-          </li>
-          <li><a class="bookmarks" href="#">Закладки:0</a></li>
-          <li><a class="basket" href="#">Корзина:0</a></li>
-          <li><a class="box" href="#">Оформить заказ</a></li>
+          <li class="search"><a href="#">Поиск:</a></li>
+          <li class="bookmarks"><a href="#">Закладки:0</a></li>
+          <li class="basket"><a href="#">Корзина:0</a></li>
+          <li class="box"><a href="#">Оформить заказ</a></li>
         </ul>
         <p class="text-header">Интернет-магазин<br>
           строительных материалов<br>
@@ -50,20 +45,20 @@
         <h2>Навигация</h2>
         <nav>
           <ul class="main-nav">
-            <li><a class="nav-list" href="#">Главная</a></li>
-            <li><a class="nav-list" href="#">Компания</a></li>
-            <li><a class="nav-list" href="catalog.html">Каталог</a></li>
-            <li><a class="nav-list" href="#">Новости</a></li>
-            <li><a class="nav-list" href="#">Спецпредложения</a></li>
-            <li><a class="nav-list" href="#">Доставка</a></li>
-            <li><a class="nav-list" href="#">Контакты</a></li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <h1>Интернет-магазин строительных материалов и инструмента для ремонта</h1>
     <section>
       <h3>Материалы</h3>
@@ -162,47 +157,20 @@
         <a class="button" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
       </div>
       <ul class="feature-logo">
-        <a href="#">
-          <li class="logo-partner">
-            <img src="img/logo-proizvoditeli/bosch.png" width="126" height="37" alt="логотип bosch">
-          </li>
-        </a>
-        <a href="#">
-          <li class="logo-partner">
-            <img src="img/logo-proizvoditeli/Makita.png" width="123" height="40" alt="логотип makita">
-          </li>
-        </a>
-        <a href="#">
-          <li class="logo-partner">
-            <img src="img/logo-proizvoditeli/DeWALT.png" width="146" height="44" alt="логотип dewal">
-          </li>
-        </a>
-        <a href="#">
-          <li class="logo-partner">
-            <img src="img/logo-proizvoditeli/interskol.png" width="200" height="75"
-              alt="логотип интерскол">
-          </li>
-        </a>
-        <a href="#">
-          <li class="logo-partner">
-            <img src="img/logo-proizvoditeli/Hitachi.png" width="169" height="31" alt="логотип hitachi">
-          </li>
-        </a>
-        <a href="#">
-          <li class="logo-partner">
-            <img src="img/logo-proizvoditeli/LG.png" width="121" height="73" alt="логотип LG>">
-          </li>
-        </a>
-        <a href="#">
-          <li class="logo-partner">
-            <img src="img/logo-proizvoditeli/AEG.png" width="151" height="96" alt="логотип AEG">
-          </li>
-        </a>
-        <a href="#">
-          <li class="logo-partner">
-            <img src="img/logo-proizvoditeli/Metabo.png" width="204" height="69" alt="логотип metabo">
-          </li>
-        </a>
+        <li class="logo-partner"><a href="#"><img src="img/logo-proizvoditeli/bosch.png" width="126" height="37" alt="логотип bosch"></a>
+        </li>
+        <li class="logo-partner"><a href="#"><img src="img/logo-proizvoditeli/Makita.png" width="123" height="40" alt="логотип makita"></a>
+        </li>
+        <li class="logo-partner"><a href="#"><img src="img/logo-proizvoditeli/DeWALT.png" width="146" height="44" alt="логотип dewal"></a>
+        </li>
+        <li class="logo-partner"><a href="#"><img src="img/logo-proizvoditeli/interskol.png" width="200" height="75"
+              alt="логотип интерскол"></a></li>
+        <li class="logo-partner"><a href="#"><img src="img/logo-proizvoditeli/Hitachi.png" width="169" height="31" alt="логотип hitachi"></a>
+        </li>
+        <li class="logo-partner"><a href="#"><img src="img/logo-proizvoditeli/LG.png" width="121" height="73" alt="логотип LG>"></a></li>
+        <li class="logo-partner"><a href="#"><img src="img/logo-proizvoditeli/AEG.png" width="151" height="96" alt="логотип AEG"></a></li>
+        <li class="logo-partner"><a href="#"><img src="img/logo-proizvoditeli/Metabo.png" width="204" height="69" alt="логотип metabo"></a>
+        </li>
       </ul>
     </section>
 
@@ -215,15 +183,9 @@
     </div>
     <div class="info">
       <ul class="caption-list">
-        <li class="table">
-          <button class="table-button" type="button">Доставка</button>
-        </li>
-        <li class="table">
-          <button class="table-button" type="button">Гарантия</button>
-        </li>
-        <li class="table">
-          <button class="table-button" type="button">Кредит</button>
-        </li>
+        <li class="tabl">Доставка</li>
+        <li class="tabl">Гарантия</li>
+        <li class="tabl">Кредит</li>
       </ul>
       <ul>
         <li class="text-info">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
@@ -271,21 +233,11 @@
       </p>
       <nav>
         <ul class="footer-nav">
-          <li>
-            <a class="footer__nav-list" href="#">Компания</a>
-          </li>
-          <li>
-            <a class="footer__nav-list" href="#">Новости</a>
-          </li>
-          <li>
-            <a class="footer__nav-list" href="catalog.html">Каталог</a>
-          </li>
-          <li>
-            <a class="footer__nav-list" href="#">Доставка</a>
-          </li>
-          <li>
-            <a class="footer__nav-list" href="#">Контакты</a>
-          </li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -297,18 +249,10 @@
       </p>
       <nav>
         <ul class="footer-list">
-          <li>
-            <a class="footer-shop" href="#">Материалы</a>
-          </li>
-          <li>
-            <a class="footer-shop" href="#">Техника</a>
-          </li>
-          <li>
-            <a class="footer-shop" href="#">Инструмент</a>
-          </li>
-          <li>
-            <a class="footer-shop" href="#">Спецпредложения</a>
-          </li>
+          <li><a class="footer-shop" href="#">Материалы</a></li>
+          <li><a class="footer-shop" href="#">Техника</a></li>
+          <li><a class="footer-shop" href="#">Инструмент</a></li>
+          <li><a class="footer-shop" href="#">Спецпредложения</a></li>
         </ul>
       </nav>
     </div>
