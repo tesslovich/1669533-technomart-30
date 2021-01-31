@@ -95,20 +95,31 @@ line-height: 24px;
 }
 
 
-.search :hover {
+.search {
+  background-color: #293449;
+}
+
+.search:hover {
   background-color: #FFFFFF;
 }
 
+.bookmarks:focus {
+  background-color: #161D29;
+}
 
+.basket:focus {
+  background-color: #161D29;
+}
 .box {
   background-color: #63A63E;
 }
 
-.box :hover {
+.box:hover {
   background-color: #5FBB2D;
 }
 
-.box :focus {
+
+.box:focus {
   background-color: #63A63E;
 }
 
@@ -137,6 +148,14 @@ line-height: 24px;
   line-height: 21px;
 }
 
+.login:hover {
+  color: #EE3643;
+}
+
+.login:focus {
+  color: #C5C5C5;
+}
+
 .main-nav {
   background-color: #32425C;
   list-style: none;
@@ -145,20 +164,18 @@ line-height: 24px;
   text-align: justify;
 }
 
-.main-nav :hover {
+.nav-list:hover {
   background-color: #293449;;
 }
 
-.main-nav :focus {
+.nav-list:focus {
   background-color: #1D2739;;
 }
 
-/* container */
 
 
-.container {
 
-}
+/* main */
 
 
 .feature-list {
@@ -183,6 +200,7 @@ line-height: 24px;
   color:#FFFFFF;
   width: 300px;
   height: 123px;
+  padding: 20px;
 }
 
 .materials,
@@ -204,10 +222,17 @@ line-height: 24px;
 .btn {
   font-size: 14px;
   line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
+.btn:hover {
+  opacity: 0.3;
+}
 
-
+.btn:focus {
+  opacity: 0.3;
+}
 
 .materials a:hover,
 .tools a:hover,
@@ -236,6 +261,7 @@ line-height: 24px;
   width: 620px;
   height: 266px;
   color: #FFFFFF;
+  padding: 23px;
 }
 
 .text-drill {
@@ -246,6 +272,7 @@ line-height: 24px;
   width: 620px;
   height: 266px;
   color: #FFFFFF;
+  padding: 23px;
 }
 
 
@@ -301,6 +328,7 @@ line-height: 24px;
   color: #32425C;
   font-size: 30px;
   line-height: 30px;
+  padding: 20px;
 }
 
 
@@ -339,18 +367,6 @@ line-height: 24px;
 }
 
 
-.in-bookmarks {
-  border: 3px solid #63A63E;
-  border-radius: 2px;
-  color: #000000;
-  background-color: #FFFFFF;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-
-
 .buy:hover {
   background-color: #5FBB2D;;
 }
@@ -360,14 +376,32 @@ line-height: 24px;
 }
 
 
+.in-bookmarks {
+  border: 3px solid #63A63E;
+  border-radius: 2px;
+  color: #32425C;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+
+
 .in-bookmarks:hover {
   border: 3px solid #32425C;
+  opacity: 0.9;
 }
 
 
 .in-bookmarks:focus {
   border: 3px solid #32425C;
+  opacity: 0.3;
 }
+
+
+
+/* LOGO */
 
 
 .feature-logo {
@@ -379,8 +413,20 @@ line-height: 24px;
 .logo-partner {
   width: 220px;
   height: 145px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  text-align: center;
 }
 
+.logo-partner:hover {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+}
+
+.logo-partner:focus {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+}
 
 /*info*/
 
@@ -414,15 +460,24 @@ line-height: 24px;
 }
 
 
-.tabl {
+.table-button {
   background-color: #32425C;
   color: #FFFFFF;
+  width: 240px;
+  height: 61px;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid:#32425C;
 }
 
-.tabl:hover {
+.table-button:hover {
   background-color: #293449;
 }
 
+.table-button:active {
+  background-color: #FFFFFF;
+  color: #000000;
+}
 
 
 .info-partner {
@@ -455,6 +510,17 @@ line-height: 24px;
   list-style: none;
 }
 
+.footer__nav-list:hover {
+  text-decoration: underline;
+}
+
+
+.footer__nav-list:focus {
+  color: #F1F5F7;
+  opacity: 0.5;
+}
+
+
 
 .footer-list {
   list-style: none;
@@ -466,7 +532,15 @@ line-height: 24px;
 }
 
 
+.footer-shop:hover {
+  text-decoration: underline;
+}
 
+
+.footer-shop:focus {
+  color: #FFD180;
+  opacity: 0.5;
+}
 
 /*footer-footer*/
 
@@ -484,6 +558,27 @@ line-height: 24px;
 }
 
 
+.social-button:hover {
+  background-color: #EE3643;
+}
+
+
+..social-button:focus {
+  background-color: #EE3643;
+}
+
+
+
 .copyright {
   color: #FFD180;
+}
+
+
+.copyright:hover {
+  text-decoration: underline;
+}
+
+
+.copyright:focus {
+  color: #EE3643;
 }
