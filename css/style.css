@@ -1,0 +1,489 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+  url("../fonts/cuprum.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+  url("../fonts/cuprumbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Variables */
+
+
+:root {
+--red:#EE3643;
+--darkred:#CA2C37;
+--darkdarkred:#BA2732;
+--black:#000000;
+--white:  #FFFFFF;
+--yellow: #FFBF47;
+--blue: #3BBCE3;
+--purple:  #DC91D8;
+--green:  #8ED78F;
+--basicgreen:#63A63E;
+--lightgreen:#5FBB2D;
+--darkgreen:#518534;
+--gray: #A9A9A9;
+--darkblue:#293449;
+--dark-dark-blue: #32425C;
+--lightblue:#32425C;
+--lightgray: #F9F5F0;
+--lightblue: #F1F5F7;
+--lightmaro: #FFD180;
+}
+
+
+/*Global*/
+
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum";
+  font-size: normal;
+  line-height: normal;
+  font-weight: normal;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*main-header*/
+
+
+.main-header {
+padding: 0;
+margin: 5px;
+color: white;
+font-size: 18px;
+line-height: 24px;
+}
+
+.main-logo {
+  background: #EE3643;
+  text-align: center;
+
+}
+
+.nav-shop {
+  background: #293449;
+  list-style: none;
+}
+
+
+.search :hover {
+  background-color: #FFFFFF;
+}
+
+
+.box {
+  background-color: #63A63E;
+}
+
+.box :hover {
+  background-color: #5FBB2D;
+}
+
+.box :focus {
+  background-color: #63A63E;
+}
+
+.text-header {
+  font-style: oblique;
+  color: #EE3643;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.tel-header {
+  color: #EE3643;
+  font-weight: bold;
+}
+
+.adress-header {
+  color: #32425C;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.login {
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0.0001);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.main-nav {
+  background-color: #32425C;
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.main-nav :hover {
+  background-color: #293449;;
+}
+
+.main-nav :focus {
+  background-color: #1D2739;;
+}
+
+/* container */
+
+
+.container {
+
+}
+
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-item {
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background-color: #ffbf;
+}
+
+
+.materials,
+.tools,
+.tehnic,
+.discount,
+.delivery {
+  font-size: 24px;
+  line-height: 30px;
+  color:#FFFFFF;
+  width: 300px;
+  height: 123px;
+}
+
+.materials,
+.delivery {
+  background-color: #FFBF47;
+}
+
+.tools {
+  background-color: #3BBCE3;
+}
+
+.tehnic {
+  background-color: #DC91D8;
+}
+
+.discount {
+  background-color: #8ED78F;
+}
+.btn {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+
+
+.materials a:hover,
+.tools a:hover,
+.tehnic a:hover,
+.discount a:hover,
+.delivery a:hover {
+  background-color: #C5C5C5;
+}
+
+.materials a:focus,
+.tools a:focus,
+.tehnic a:focus,
+.discount a:focus,
+.delivery a:focus {
+  background-color: #A9A9A9;
+}
+
+
+
+
+.text-perforator {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-image: url("../img/fon.jpg");
+  width: 620px;
+  height: 266px;
+  color: #FFFFFF;
+}
+
+.text-drill {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-image: url("../img/fonn.jpg");
+  width: 620px;
+  height: 266px;
+  color: #FFFFFF;
+}
+
+
+.text {
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.button {
+  background-color: #EE3643;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+
+.button:hover {
+  background-color: #CA2C37;
+}
+
+.button:focus {
+  background-color: #BA2732;;
+}
+
+
+
+.btn-next,
+.btn-back {
+  color: #FFFFFF;
+}
+
+
+
+/*Popular goods*/
+
+
+.wrap {
+  background-color: #F9F5F0;
+}
+
+
+.feature-items {
+  list-style: none;
+}
+
+.cart {
+  border : 1px solid #EAEAEA;
+}
+
+.heading {
+  color: #32425C;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+
+.product-name {
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+.old-price {
+  color: #a9a9a9;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #ffffff;
+}
+
+
+.button-price {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #EE3643;
+  width: 141px;
+  height: 38px;
+}
+
+
+.buy {
+  color: #FFFFFF;
+  background: #63A63E;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  text-transform: uppercase;
+}
+
+
+.in-bookmarks {
+  border: 3px solid #63A63E;
+  border-radius: 2px;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+
+
+.buy:hover {
+  background-color: #5FBB2D;;
+}
+
+.buy:focus {
+  background-color: #518534;
+}
+
+
+.in-bookmarks:hover {
+  border: 3px solid #32425C;
+}
+
+
+.in-bookmarks:focus {
+  border: 3px solid #32425C;
+}
+
+
+.feature-logo {
+  list-style: none;
+  background-color: #ffffff;
+}
+
+
+.logo-partner {
+  width: 220px;
+  height: 145px;
+}
+
+
+/*info*/
+
+
+.info {
+  background-color: #F1F5F7;
+}
+
+
+.caption {
+  color: #000000;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+.text-info {
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+  list-style: none;
+}
+
+
+
+.caption-list {
+  font-size: 21px;
+  line-height: 30px;
+  list-style: none;
+}
+
+
+.tabl {
+  background-color: #32425C;
+  color: #FFFFFF;
+}
+
+.tabl:hover {
+  background-color: #293449;
+}
+
+
+
+.info-partner {
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+}
+
+
+
+/* FOOTER */
+
+
+.footer {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #32425C;
+}
+
+
+
+.footer-logo {
+  background-color: #EE3643;
+}
+
+
+.footer-nav {
+  list-style: none;
+}
+
+
+.footer-list {
+  list-style: none;
+}
+
+
+.footer-shop {
+  color: #FFD180;
+}
+
+
+
+
+/*footer-footer*/
+
+
+
+.footer-footer {
+  background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+.social {
+  list-style: none;
+}
+
+
+.copyright {
+  color: #FFD180;
+}
