@@ -21,25 +21,36 @@
 
 
 :root {
---red:#EE3643;
---darkred:#CA2C37;
---darkdarkred:#BA2732;
---black:#000000;
---white:  #FFFFFF;
+--white: #FFFFFF;
+
+--black: #000000;
+
+--blue: #32425C;
+--shadowblue: #293449;
+--darkblue: #1D2739;
+
+--grey: #A9A9A9;
+
+--red: #EE3643;
 --yellow: #FFBF47;
---blue: #3BBCE3;
---purple:  #DC91D8;
---green:  #8ED78F;
---basicgreen:#63A63E;
---lightgreen:#5FBB2D;
---darkgreen:#518534;
---gray: #A9A9A9;
---darkblue:#293449;
---dark-dark-blue: #32425C;
---lightblue:#32425C;
---lightgray: #F9F5F0;
---lightblue: #F1F5F7;
---lightmaro: #FFD180;
+--orange: #FFD180;
+--lightblue: #3BBCE3;
+--purple: #DC91D8;
+--green: #8ED78F;
+
+/* background */
+
+--lightgrey: #C5C5C5;
+--darkgray: #A9A9A9;
+--lightred: #CA2C37;
+--darkred: #BA2732;
+--lightgreen: #5FBB2D;
+--darkgreen: #518534;
+--darkblack: #161D29;
+--basicgreen: #63A63E;
+--darkwhite: #F9F5F0;
+--darkgrey: #F1F5F7;
+--lightwhite: #EAEAEA;
 }
 
 
@@ -60,7 +71,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 
@@ -78,86 +89,86 @@ img {
 .main-header {
 padding: 0;
 margin: 5px;
-color: white;
+color: var(--white);
 font-size: 18px;
 line-height: 24px;
 }
 
 .main-logo {
-  background: #EE3643;
+  background: var(--red);
   text-align: center;
 
 }
 
 .nav-shop {
-  background: #293449;
+  background: var(--shadowblue);
   list-style: none;
 }
 
 
 .search {
-  background-color: #293449;
+  background-color: var(--shadowblue);
 }
 
 .search:hover {
-  background-color: #FFFFFF;
+  background-color: var(--white);
 }
 
 .bookmarks:focus {
-  background-color: #161D29;
+  background-color: var(--darkblack);
 }
 
 .basket:focus {
-  background-color: #161D29;
+  background-color: var(--darkblack);
 }
 .box {
-  background-color: #63A63E;
+  background-color: var(--basicgreen);
 }
 
 .box:hover {
-  background-color: #5FBB2D;
+  background-color: var(--lightgreen);
 }
 
 
 .box:focus {
-  background-color: #63A63E;
+  background-color: var(--basicgreen);
 }
 
 .text-header {
   font-style: oblique;
-  color: #EE3643;
+  color: var(--red);
   font-size: 16px;
   line-height: 23px;
 }
 
 .tel-header {
-  color: #EE3643;
+  color: var(--red);
   font-weight: bold;
 }
 
 .adress-header {
-  color: #32425C;
+  color: var(--blue);
   font-size: 14px;
   line-height: 24px;
 }
 
 .login {
-  color: #000000;
+  color: var(--black);
   background-color: rgba(0, 0, 0, 0.0001);
   font-size: 21px;
   line-height: 21px;
 }
 
 .login:hover {
-  color: #EE3643;
+  color: var(--red);
 }
 
 .login:focus {
-  color: #C5C5C5;
+  color: var(--lightgrey);
 }
 
 .main-nav {
-  background-color: #32425C;
+  background-color: var(--blue);
   list-style: none;
   font-size: 18px;
   line-height: 24px;
@@ -165,11 +176,11 @@ line-height: 24px;
 }
 
 .nav-list:hover {
-  background-color: #293449;;
+  background-color: var(--shadowblue);
 }
 
 .nav-list:focus {
-  background-color: #1D2739;;
+  background-color: var(--darkblue);
 }
 
 
@@ -185,8 +196,8 @@ line-height: 24px;
 .feature-item {
   font-size: 24px;
   line-height: 30px;
-  color: #FFFFFF;
-  background-color: #ffbf;
+  color: var(--white);
+  background-color: var(--yellow);
 }
 
 
@@ -197,7 +208,7 @@ line-height: 24px;
 .delivery {
   font-size: 24px;
   line-height: 30px;
-  color:#FFFFFF;
+  color:var(--white);
   width: 300px;
   height: 123px;
   padding: 20px;
@@ -205,24 +216,24 @@ line-height: 24px;
 
 .materials,
 .delivery {
-  background-color: #FFBF47;
+  background-color: var(--yellow);
 }
 
 .tools {
-  background-color: #3BBCE3;
+  background-color: var(--lightblue);
 }
 
 .tehnic {
-  background-color: #DC91D8;
+  background-color: var(--purple);
 }
 
 .discount {
-  background-color: #8ED78F;
+  background-color: var(--green);
 }
 .btn {
   font-size: 14px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: var(--white);
   opacity: 0.3;
 }
 
@@ -239,7 +250,7 @@ line-height: 24px;
 .tehnic a:hover,
 .discount a:hover,
 .delivery a:hover {
-  background-color: #C5C5C5;
+  background-color: var(--lightgrey);
 }
 
 .materials a:focus,
@@ -247,7 +258,7 @@ line-height: 24px;
 .tehnic a:focus,
 .discount a:focus,
 .delivery a:focus {
-  background-color: #A9A9A9;
+  background-color: var(--darkgray);
 }
 
 
@@ -260,7 +271,7 @@ line-height: 24px;
   background-image: url("../img/fon.jpg");
   width: 620px;
   height: 266px;
-  color: #FFFFFF;
+  color: var(--white);
   padding: 23px;
 }
 
@@ -271,7 +282,7 @@ line-height: 24px;
   background-image: url("../img/fonn.jpg");
   width: 620px;
   height: 266px;
-  color: #FFFFFF;
+  color: var(--white);
   padding: 23px;
 }
 
@@ -279,11 +290,11 @@ line-height: 24px;
 .text {
   font-size: 18px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 .button {
-  background-color: #EE3643;
+  background-color: var(--red);
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
@@ -292,18 +303,18 @@ line-height: 24px;
 
 
 .button:hover {
-  background-color: #CA2C37;
+  background-color: var(--lightred);
 }
 
 .button:focus {
-  background-color: #BA2732;;
+  background-color: var(--darkred);
 }
 
 
 
 .btn-next,
 .btn-back {
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 
@@ -312,7 +323,7 @@ line-height: 24px;
 
 
 .wrap {
-  background-color: #F9F5F0;
+  background-color: var(--darkwhite);
 }
 
 
@@ -321,11 +332,11 @@ line-height: 24px;
 }
 
 .cart {
-  border : 1px solid #EAEAEA;
+  border : 1px solid var(--lightwhite);
 }
 
 .heading {
-  color: #32425C;
+  color: var(--blue);
   font-size: 30px;
   line-height: 30px;
   padding: 20px;
@@ -333,33 +344,33 @@ line-height: 24px;
 
 
 .product-name {
-  color: #000000;
+  color: var(--black);
   font-size: 18px;
   line-height: 20px;
 }
 
 
 .old-price {
-  color: #a9a9a9;
+  color: var(--grey);
   font-size: 17px;
   line-height: 18px;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 
 .button-price {
-  color: #ffffff;
+  color: var(--white);
   font-size: 17px;
   line-height: 18px;
-  background-color: #EE3643;
+  background-color: var(--red);
   width: 141px;
   height: 38px;
 }
 
 
 .buy {
-  color: #FFFFFF;
-  background: #63A63E;
+  color: var(--white);
+  background: var(--basicgreen);
   font-size: 14px;
   line-height: 18px;
   border: none;
@@ -368,19 +379,19 @@ line-height: 24px;
 
 
 .buy:hover {
-  background-color: #5FBB2D;;
+  background-color: var(--lightgreen);
 }
 
 .buy:focus {
-  background-color: #518534;
+  background-color: var(--darkgreen);
 }
 
 
 .in-bookmarks {
-  border: 3px solid #63A63E;
+  border: 3px solid var(--basicgreen);
   border-radius: 2px;
-  color: #32425C;
-  background-color: #FFFFFF;
+  color: var(--blue);
+  background-color: var(--white);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -389,13 +400,13 @@ line-height: 24px;
 
 
 .in-bookmarks:hover {
-  border: 3px solid #32425C;
+  border: 3px solid var(--blue)
   opacity: 0.9;
 }
 
 
 .in-bookmarks:focus {
-  border: 3px solid #32425C;
+  border: 3px solid var(--blue);
   opacity: 0.3;
 }
 
@@ -406,38 +417,38 @@ line-height: 24px;
 
 .feature-logo {
   list-style: none;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 
 .logo-partner {
   width: 220px;
   height: 145px;
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
+  background: var(--white);
+  border: 1px solid var(--lightwhite);
   text-align: center;
 }
 
 .logo-partner:hover {
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
+  background: var(--white);
+  border: 1px solid var(--lightwhite);
 }
 
 .logo-partner:focus {
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
+  background: var(--white);
+  border: 1px solid var(--lightwhite);
 }
 
 /*info*/
 
 
 .info {
-  background-color: #F1F5F7;
+  background-color: var(--darkgrey);
 }
 
 
 .caption {
-  color: #000000;
+  color: var(--black);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -445,7 +456,7 @@ line-height: 24px;
 
 
 .text-info {
-  color: #000000;
+  color: var(--black);
   font-size: 13px;
   line-height: 24px;
   list-style: none;
@@ -461,27 +472,27 @@ line-height: 24px;
 
 
 .table-button {
-  background-color: #32425C;
-  color: #FFFFFF;
+  background-color: var(--blue);
+  color: var(--white);
   width: 240px;
   height: 61px;
   text-align: left;
   padding: 20px;
-  border: 1px solid:#32425C;
+  border: 1px solid var(--blue);
 }
 
 .table-button:hover {
-  background-color: #293449;
+  background-color: var(--shadowblue);
 }
 
 .table-button:active {
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 
 .info-partner {
-  color: #000000;
+  color: var(--black);
   font-size: 18px;
   line-height: 24px;
   list-style: none;
@@ -495,14 +506,14 @@ line-height: 24px;
 .footer {
   font-size: 18px;
   line-height: 24px;
-  color: #ffffff;
-  background-color: #32425C;
+  color: var(--white);
+  background-color: var(--blue);
 }
 
 
 
 .footer-logo {
-  background-color: #EE3643;
+  background-color: var(--red);
 }
 
 
@@ -516,7 +527,7 @@ line-height: 24px;
 
 
 .footer__nav-list:focus {
-  color: #F1F5F7;
+  color: var(--darkgrey);
   opacity: 0.5;
 }
 
@@ -528,7 +539,7 @@ line-height: 24px;
 
 
 .footer-shop {
-  color: #FFD180;
+  color: var(--orange);
 }
 
 
@@ -538,7 +549,7 @@ line-height: 24px;
 
 
 .footer-shop:focus {
-  color: #FFD180;
+  color: var(--orange);
   opacity: 0.5;
 }
 
@@ -547,7 +558,7 @@ line-height: 24px;
 
 
 .footer-footer {
-  background-color: #293449;
+  background-color: var(--shadowblue);
   font-size: 16px;
   line-height: 18px;
 }
@@ -559,18 +570,18 @@ line-height: 24px;
 
 
 .social-button:hover {
-  background-color: #EE3643;
+  background-color: var(--red);
 }
 
 
 ..social-button:focus {
-  background-color: #EE3643;
+  background-color: var(--red);
 }
 
 
 
 .copyright {
-  color: #FFD180;
+  color: var(--orange);
 }
 
 
@@ -580,5 +591,5 @@ line-height: 24px;
 
 
 .copyright:focus {
-  color: #EE3643;
+  color: var(--red);
 }
