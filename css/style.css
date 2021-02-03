@@ -454,14 +454,15 @@ line-height: 24px;
 .logo-partner:hover {
   background: var(--white);
   border: 1px solid var(--lightwhite);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+
 }
 
-.logo-partner:active {
+.logo-partner:focus {
   background: var(--white);
   border: 1px solid var(--lightwhite);
   background-color: var(--white);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   opacity: 0.5;
 }
 
@@ -748,9 +749,7 @@ line-height: 24px;
 
 /* radio/checkbox */
 
-.giv:indeterminate {
-  color: #3BBCE3;
-}
+
 
 
 /* catalog-poduct */
