@@ -887,6 +887,7 @@ padding: 0;
 
 .help-filter {
   margin-left: 20px;
+  display: flex;
 }
 
 .catalog-list {
@@ -978,9 +979,8 @@ padding: 0;
 
 /* radio/checkbox */
 
-:disabled {
-  color: #518534;
-}
+
+
 /* catalog-poduct */
 
 .catalog-product {
@@ -1002,6 +1002,8 @@ padding: 0;
   list-style: none;
   margin-left: 20px;
   margin-bottom: 59px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .page-first,
