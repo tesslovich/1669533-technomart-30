@@ -719,14 +719,22 @@ padding: 0;
 
 .footer-logo {
   background-color: var(--red);
+  margin: 0px;
 }
 
 
 .footer-nav {
   list-style: none;
-  padding: 0px;
+  padding: auto;
   display: flex;
 }
+
+
+.footer__nav-list {
+  padding-right: 58px;
+}
+
+
 
 .footer__nav-list:hover {
   text-decoration: underline;
@@ -744,14 +752,16 @@ padding: 0;
 
 .footer-list {
   list-style: none;
-  padding: 0px;
+
   width: 940px;
   display: flex;
+  margin-left: auto;
 }
 
 
 .footer-shop {
   color: var(--orange);
+  padding-right: 58px;
 }
 
 
