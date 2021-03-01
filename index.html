@@ -17,16 +17,16 @@
   <header class="main-header">
     <nav>
       <div class="main-header-bar">
-        <div class="grid-box-top">
-          <a>
-            <img class="main-logo" src="img/logotip/logo-technomart.svg" width="108" height="18"
+        <div class="flex-box-top">
+          <a class="logo-box">
+            <img class="main-logo" src="img/logotip/logo-technomart.svg" width="114" height="20"
               alt="Логотип Техномарт">
           </a>
           <ul class="nav-shop">
             <li class="shop-search">
-              <form action="https://echo.htmlacademy.ru" method="get">
+              <form class="form-header" action="https://echo.htmlacademy.ru" method="get">
                 <input class="search-header" type="search" id="search-header">
-                <label for="search-header"></label>
+                <!-- <label for="search-header"></label> -->
               </form>
             </li>
             <li class="flex-box-header">
@@ -48,7 +48,7 @@
           и инструмента для ремонта
         </p>
         <div>
-          <p>
+          <p class="box-tel">
             <a class="tel-header" href="tel:+78125550555">+7(812)555-05-55</a>
           </p>
           <p class="adress-header">
@@ -56,15 +56,15 @@
           </p>
         </div>
         <div>
-          <a class="login" href="#"><b>Войти</b></a>
-          <a class="login" href="#"><b>Регистрация</b></a>
+          <a class="login enter" href="#"><b>Войти</b></a>
+          <a class="login register" href="#"><b>Регистрация</b></a>
         </div>
       </div>
 
-      <h2>Навигация</h2>
+      <h2 class="visually-hidden">Навигация</h2>
       <nav>
         <ul class="main-nav">
-          <li><a class="nav-list" href="#">Главная</a></li>
+          <li><a class="nav-list first-element" href="#">Главная</a></li>
           <li><a class="nav-list" href="#">Компания</a></li>
           <li><a class="nav-list" href="catalog.html">Каталог</a></li>
           <li><a class="nav-list" href="#">Новости</a></li>
@@ -77,12 +77,13 @@
   </header>
 
   <main class="container">
-    <h1>Интернет-магазин строительных материалов и инструмента для ремонта</h1>
+    <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструмента для ремонта</h1>
     <section>
-      <h3>Материалы</h3>
+      <h3 class="visually-hidden">Материалы</h3>
       <ul class="feature-list">
         <li class="materials">Материалы
           <a class="btn" href="#">на любой вкус</a>
+          <span class="new-line">new</span>
         </li>
         <li class="tools">Инструменты
           <a class="btn-instr" href="#">на все случаи</a>
@@ -97,20 +98,24 @@
           <a class="btn" href="#">бесплатно</a>
         </li>
         <li>
-          <div>
+          <div class="picture-box">
             <h4 class="text-perforator">ПЕРФОРАТОРЫ</h4>
             <p class="text">
-              <!-- Настоящие мужские игрушки -->
+              Настоящие мужские игрушки
             </p>
             <!-- <h4 class="text-drill">ДРЕЛИ</h4>
             <p class="text">
               Соседям на радость!
             </p> -->
-            <a class="button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-            <!--<div>
-              <button class="btn-next" type="button">Назад</button>
-              <button class="btn-back" type="button">Вперед</button>
-            </div>-->
+            <a class="button button-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+            <div>
+              <button class="btn-back" type="button">
+                <i class="back-item"></i>
+              </button>
+              <button class="btn-next" type="button">
+                <i class="next-item"></i>
+              </button>
+            </div>
           </div>
         </li>
       </ul>
@@ -119,58 +124,72 @@
     <section>
       <div class="wrap">
         <h2 class="heading">Популярные товары:</h2>
-        <a class="button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+        <a class="button button-goods" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
       </div>
       <ul class="feature-items">
         <li>
           <div class="cart">
-            <img src="img/bfg_9000.jpg" width="184" height="164" alt="BOSH 9000">
+            <div class="cart-img">
+              <img src="img/bfg_9000.jpg" width="184" height="164" alt="BOSH 9000">
+            </div>
             <div class="flex-box-button">
-              <button class="buy" type="button">Купить</button>
-              <button class="in-bookmarks" type="button">В закладки</button>
+              <button class="buy switch" type="button">Купить</button>
+              <button class="in-bookmarks switch" type="button">В закладки</button>
             </div>
             <h4 class="product-name">Перфоратор BOSH BFG 9000</h4>
-            <p class="button-price">
-              <del class="old-price">32500 Р.</del>25500 Р.
+            <p class="test">
+              <del class="old-price">32500 Р.</del>
+              <span class="button-price">25500 Р.</span>
             </p>
           </div>
         </li>
         <li>
           <div class="cart">
-            <img src="img/BFG-3000.jpg" width="127" height="112" alt="BOSH 3000">
+            <div class="cart-img">
+              <img src="img/BFG-3000.jpg" width="127" height="112" alt="BOSH 3000">
+            </div>
             <div class="flex-box-button">
-              <button class="buy" type="button">Купить</button>
-              <button class="in-bookmarks" type="button">В закладки</button>
+              <button class="buy switch" type="button">Купить</button>
+              <button class="in-bookmarks switch" type="button">В закладки</button>
             </div>
             <h4 class="product-name">Перфоратор BOSH BFG 3000</h4>
-            <p class="button-price">
-              <del class="old-price">22500 Р.</del>15500 Р.
+            <p class="test">
+              <del class="old-price">22500 Р.</del>
+              <span class="button-price">15500 Р.</span>
+              <span class="new-line">new</span>
             </p>
           </div>
         </li>
         <li>
           <div class="cart">
-            <img src="img/BFG-6000.jpg" width="144" height="128" alt="BOSH 6000">
+            <div class="cart-img">
+              <img src="img/BFG-6000.jpg" width="144" height="128" alt="BOSH 6000">
+            </div>
             <div class="flex-box-button">
-              <button class="buy" type="button">Купить</button>
-              <button class="in-bookmarks" type="button">В закладки</button>
+              <button class="buy switch" type="button">Купить</button>
+              <button class="in-bookmarks switch" type="button">В закладки</button>
             </div>
             <h4 class="product-name">Перфоратор BOSH BFG 6000</h4>
-            <p class="button-price">
-              <del class="old-price">30500 Р.</del>25500 Р.
+            <p class="test">
+              <del class="old-price">30500 Р.</del>
+              <span class="button-price">25500 Р.</span>
             </p>
           </div>
         </li>
         <li>
           <div class="cart">
-            <img src="img/BFG-6000.jpg" width="127" height="112" alt="BOSH 2000">
+            <div class="cart-img">
+              <img src="img/BFG-6000.jpg" width="127" height="112" alt="BOSH 2000">
+            </div>
             <div class="flex-box-button">
-              <button class="buy" type="button">Купить</button>
-              <button class="in-bookmarks" type="button">В закладки</button>
+              <button class="buy switch" type="button">Купить</button>
+              <button class="in-bookmarks switch" type="button">В закладки</button>
             </div>
             <h4 class="product-name">Перфоратор BOSH BFG 2000</h4>
-            <p class="button-price">
-              <del class="old-price">22500 Р.</del>12500 Р.
+            <p class="test">
+              <del class="old-price">22500 Р.</del>
+              <span class="button-price">12500 Р.</span>
+              <span class="new-line">new</span>
             </p>
           </div>
         </li>
@@ -180,7 +199,7 @@
     <section>
       <div class="wrap">
         <h2 class="heading">Популярные производители:</h2>
-        <a class="button" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+        <a class="button button-producers" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
       </div>
       <ul class="feature-logo">
         <li class="logo-partner">
@@ -226,64 +245,70 @@
       </ul>
     </section>
 
-    <div class="info">
-      <h2 class="caption">Сервисы</h2>
-      <p class="text-info">
-        Хороший Интернет-магазин отличается от плохого не только ценами!<br>
-        Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.
-      </p>
-    </div>
-    <div class="info-grid">
-      <ul class="caption-list">
-        <li class="table">
-          <button class="table-button" type="button">Доставка</button>
-        </li>
-        <li class="table">
-          <button class="table-button" type="button">Гарантия</button>
-        </li>
-        <li class="table">
-          <button class="table-button" type="button">Кредит</button>
-        </li>
-      </ul>
-      <ul>
-        <li class="text-info">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
-          спровоцированного его
-          возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж
-          восстановите как-нибудь сами.</li>
-        <li class="text-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы
-          неплохо
-          заработаем,поднимаяего на ваш этаж!</li>
-        <li class="text-info">КредитЗалезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-        </li>
-      </ul>
-      <a href="#">Отправить заявку</a>
-    </div>
-    <div class="grid-box-bot">
-      <section>
-        <h2 class="caption">Компания техномарт</h2>
-        <p class="text-info">Настоящий мужской шопинг начинаеться здесь!Огромный выбор товаров для ремонта и
-          строительства
-          не оставит
-          равнодушным любителей сэкономить на гастарбайтерах.
+    <div class="wrapper">
+      <div class="info">
+        <h2 class="caption">Сервисы</h2>
+        <p class="text-info">
+          Хороший Интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.
         </p>
-        <p class="text-info">Мы можем доставить ваш товар в самые отдаленные точеки России!<br>
+      </div>
+      <div class="info-grid">
+        <ul class="caption-list">
+          <li class="table">
+            <button class="table-button" type="button">Доставка</button>
+          </li>
+          <li class="table">
+            <button class="table-button" type="button">Гарантия</button>
+          </li>
+          <li class="table">
+            <button class="table-button" type="button">Кредит</button>
+          </li>
+        </ul>
+        <ul class="box-info">
+          <li class="text-info visually-hidden">Если купленный у нас товар поломается или заискрит, а также в случае
+            пожара,
+            спровоцированного его
+            возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж
+            восстановите как-нибудь сами.</li>
+          <li class="text-info">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно
+            бесплатно!<br>Ведь мы
+            неплохо
+            заработаем,<br>поднимаяего на ваш этаж!
+          </li>
+          <li class="text-info visually-hidden">КредитЗалезть в долговую яму стало проще! Кредитные консультанты придут
+            вам на помощь.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-box-bot">
+      <section class="first-info-section">
+        <h2 class="caption caption-info">Компания техномарт</h2>
+        <p class="text-info">Настоящий мужской шопинг начинаеться здесь!Огромный выбор товаров для<br> ремонта и
+          строительства не оставит
+          равнодушным любителей сэкономить на<br> гастарбайтерах.<br><br>
+          Мы можем доставить ваш товар в самые отдаленные точеки России!<br>
           Техномарт работает со многими транспортными компаниями:<br>
         </p>
-        <ul>
+        <ul class="list">
           <li class="info-partner">Деловые линии</li>
           <li class="info-partner">Авторейдинг</li>
           <li class="info-partner">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+        <a class="button btn-company" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
       </section>
 
-      <section>
-        <h3 class="caption">Контакты</h3>
+      <section class="second-info-section">
+        <h3 class="caption caption-info">Контакты</h3>
         <p class="text-info">Вы можите забрать товар сами,<br>
           заехав в наш в офис:
         </p>
-        <a href="#"><img src="https://via.placeholder.com/300x158" title="Гугл карта"></a>
-        <a class="button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ</a>
+        <a href="#">
+          <img class="map" src="https://via.placeholder.com/300x158" title="Гугл карта">
+        </a>
+        <a class="button btn-forget" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ</a>
       </section>
     </div>
   </main>
@@ -350,25 +375,41 @@
           Все права защищены
         </p>
         <div>
-          <!-- <h2>Наши соц. сети</h2> -->
+          <h2 class="visually-hidden">Наши соц. сети</h2>
           <ul class="social">
             <li>
-              <a class="social-button" href="#">Вконтакте</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="26" height="15" viewBox="0 0 26 15">
+                  <path
+                    d="M15.5403 11.7281C16.4609 11.4384 17.6395 13.6406 18.8943 14.4834C19.836 15.1219 20.5573 14.9841 20.5573 14.9841L23.9017 14.9372C23.9017 14.9372 25.6495 14.8322 24.8232 13.4803C24.7549 13.3678 24.3389 12.4781 22.334 10.6472C20.2376 8.73186 20.5217 9.04218 23.0456 5.73093C24.5835 3.71249 25.1988 2.47968 25.0062 1.95468C24.8213 1.44936 23.6918 1.58061 23.6918 1.58061L19.9237 1.60593C19.5568 1.60686 19.2458 1.71749 19.1042 2.08874C19.1013 2.09249 18.5062 3.65061 17.7127 4.9753C16.0362 7.77749 15.3669 7.92655 15.0896 7.75124C14.4531 7.3453 14.6139 6.1228 14.6139 5.25374C14.6139 2.5378 15.0299 1.4053 13.7992 1.1128C13.388 1.0153 13.0876 0.951552 12.0389 0.942177C10.6985 0.922489 9.56027 0.942177 8.91508 1.25061C8.48656 1.45968 8.15819 1.91811 8.35753 1.94436C8.6079 1.97718 9.1693 2.09436 9.46975 2.49374C9.8559 3.01124 9.84434 4.17093 9.84434 4.17093C9.84434 4.17093 10.0649 7.36874 9.32434 7.7653C8.8159 8.03718 8.12064 7.48218 6.62516 4.9378C5.86153 3.63655 5.28471 2.19843 5.28471 2.19843C5.28471 2.19843 5.17301 1.93124 4.97079 1.78499C4.73005 1.61155 4.39301 1.55624 4.39301 1.55624L0.816563 1.57874C0.816563 1.57874 0.27923 1.59374 0.0818227 1.82436C-0.0934366 2.02874 0.0673782 2.45061 0.0673782 2.45061C0.0673782 2.45061 2.86864 8.90155 6.04064 12.1509C8.94879 15.1341 12.2537 14.9362 12.2537 14.9362H13.7511C13.7511 14.9362 14.2027 14.8856 14.4338 14.6437C14.6495 14.4187 14.6399 13.9959 14.6399 13.9959C14.6399 13.9959 14.61 12.0187 15.5403 11.7281Z"
+                    fill="white" />
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="social-button" href="#">Фейсбук</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="12" height="22" viewBox="0 0 12 22">
+                  <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="social-button" href="#">Инстаграм</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg width="21" height="21" viewBox="0 0 21 21"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <p class="text-copyright">
-          Обратная связь:
+          Обратная связь:<br>
           <a class="copyright" href="#">mail@htmlacademy.ru</a>
         </p>
         <p class="text-copyright">
-          Разработано -
+          Разработано -<br>
           <a class="copyright" href="#">htmlacademy.ru</a>
         </p>
       </div>
