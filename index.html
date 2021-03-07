@@ -24,17 +24,22 @@
           <ul class="nav-shop">
             <li class="shop-search">
               <form class="form-header" action="https://echo.htmlacademy.ru" method="get">
-                <input class="search-header" type="search" id="search-header">
+                <input class="search-header" type="search" id="search-header" placeholder="Поиск:">
+                <svg class="svg-search" width="17" height="17" viewBox="0 0 17 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
+                </svg>
                 <!-- <label for="search-header"></label> -->
               </form>
             </li>
             <li class="flex-box-header">
               <a class="bookmarks" href="#">Закладки: 0</a>
             </li>
-            <li class="flex-box-header">
+            <li>
               <a class="basket" href="#">Корзина: 0</a>
             </li>
-            <li class="flex-box-header">
+            <li>
               <a class="box" href="#">Оформить заказ</a>
             </li>
           </ul>
@@ -106,6 +111,12 @@
             <p class="text">
               Соседям на радость!
             </p> -->
+            <span class="slider-back"></span>
+            <span class="slider-next">
+              <svg>
+                <circle r="5" cx="200" cy="65%" fill="red" stroke="white" stroke-width="2"></circle>
+              </svg>
+            </span>
             <a class="button button-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             <div>
               <button class="btn-back" type="button">
@@ -256,30 +267,33 @@
         <div class="info-grid">
           <ul class="caption-list">
             <li class="table">
-              <button class="table-button" type="button">Доставка</button>
+              <button class="table-button activ-btn" type="button">Доставка</button>
             </li>
             <li class="table">
               <button class="table-button" type="button">Гарантия</button>
             </li>
             <li class="table">
-              <button class="table-button" type="button">Кредит</button>
+              <button class="table-button last-child" type="button">Кредит</button>
             </li>
           </ul>
           <ul class="box-info">
-            <h4 class="heading-list visually-hidden">Гарантия</h4>
-            <li class="text-info info-slider visually-hidden">Если купленный у нас товар поломается или заискрит, а также в случае
+            <li class="heading-list visually-hidden">Гарантия</li>
+            <li class="text-info info-slider visually-hidden">Если купленный у нас товар поломается или заискрит, а
+              также в случае
               пожара,
               спровоцированного его
               возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж
               восстановите как-нибудь сами.</li>
-              <h4 class="heading-list">Доставка</h4>
-            <li class="text-info info-slider">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно
+            <li class="heading-list">Доставка</li>
+            <li class="text-info info-slider">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду
+              совершенно
               бесплатно!<br>Ведь мы
               неплохо
               заработаем,<br>поднимаяего на ваш этаж!
             </li>
-            <h4 class="heading-list visually-hidden">Кредит</h4>
-            <li class="text-info info-slider visually-hidden">КредитЗалезть в долговую яму стало проще! Кредитные консультанты
+            <li class="heading-list visually-hidden">Кредит</li>
+            <li class="text-info info-slider visually-hidden">КредитЗалезть в долговую яму стало проще! Кредитные
+              консультанты
               придут
               вам на помощь.
             </li>
@@ -291,7 +305,8 @@
     <div class="grid-box-bot container">
       <section class="first-info-section">
         <h2 class="caption caption-info">КОМПАНИЯ «Техномарт»</h2>
-        <p class="text-info info-company">Настоящий мужской шопинг начинаеться здесь!Огромный выбор товаров для<br> ремонта и
+        <p class="text-info info-company">Настоящий мужской шопинг начинаеться здесь!Огромный выбор товаров для<br>
+          ремонта и
           строительства не оставит
           равнодушным любителей сэкономить на<br> гастарбайтерах.<br><br>
           Мы можем доставить ваш товар в самые отдаленные точеки России!<br>
@@ -299,7 +314,7 @@
         </p>
         <ul class="list">
           <li class="info-partner info-list">Деловые линии</li>
-          <li class="info-partner">Авторейдинг</li>
+          <li class="info-partner">Автотрейдинг</li>
           <li class="info-partner">ЖелДорЭкспедиция</li>
         </ul>
         <a class="button btn-company" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
@@ -310,9 +325,9 @@
         <p class="text-info">Вы можите забрать товар сами,<br>
           заехав в наш в офис:
         </p>
-        <a href="#">
-          <img class="map" src="https://via.placeholder.com/300x158" title="Гугл карта">
-        </a>
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1223.214674694837!2d30.32419166145343!3d59.93829263256871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1614953385947!5m2!1sru!2sua"
+          width="300" height="158" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <a class="button btn-forget" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
       </section>
     </div>
@@ -424,6 +439,52 @@
     </div>
 
   </footer>
+
+  <section class="modal modal-help">
+    <h2 class="visually-hidden">Нужна помощь? Напишите нам</h2>
+    <form class="help-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form">
+        <p class="name-form">
+          <label class="name" for="name">Ваше имя:</label>
+          <input class="form-text" id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="email-form">
+          <label class="email" for="e-mail">Ваш e-mail:</label>
+          <input class="form-text" id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
+        </p>
+        <p class="form-letter">
+          <label class="letter" for="letter-text">Текст письма:</label>
+          <textarea class="letter-text" id="letter-text" type="text" name="lette-text"
+            placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+      <div class="form-btn">
+        <button class="button-form" type="submit">Отправить</button>
+      </div>
+      <button class="modal-close" type="button">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z"
+            fill="#EE3643" />
+        </svg>
+      </button>
+    </form>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1223.214674694837!2d30.32419166145343!3d59.93829263256871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1614953385947!5m2!1sru!2sua"
+      width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <button class="modal-close" type="button">
+      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z"
+          fill="#EE3643" />
+      </svg>
+    </button>
+  </section>
 </body>
 
 </html>
