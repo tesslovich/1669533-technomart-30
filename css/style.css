@@ -87,6 +87,7 @@
 --backgroundgrey: #F2F6F8;
 --backgroundfiltr: #F7F3EC;
 --borderwhite: #E5E5E5;
+--checkboxfilter: #B5B5B5;
 }
 
 
@@ -255,7 +256,7 @@ margin-bottom: 43px;
 
 .bookmarks {
   position: relative;
-  padding: 9px 21px 9px 38px;
+  padding: 9px 38px 9px 38px;
 }
 
 .bookmarks::before {
@@ -278,7 +279,7 @@ margin-bottom: 43px;
 
 .basket {
   position: relative;
-  padding: 9px 27px 9px 52px;
+  padding: 9px 21px 9px 37px;
 }
 
 
@@ -287,7 +288,7 @@ margin-bottom: 43px;
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 29px;
+  left: 12px;
   top: 13px;
   background-image: url("../img/icon_cart.svg");
   background-repeat: no-repeat;
@@ -305,7 +306,7 @@ margin-bottom: 43px;
 
 .box {
   background-color: var(--basicgreen);
-  padding: 9px 16px 9px 19px;
+  padding: 9px 16px 9px 23px;
 }
 
 .box:hover {
@@ -395,13 +396,13 @@ margin-bottom: 43px;
   height: 17px;
   top: 17px;
   left: 20px;
-  background-image: url("..//img/icon_login.svg");
+  background-image: url("..//img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .enter:hover::before {
-  background-image: url(..//img/icon_login_hover.svg);
+  background-image: url("..//img/icon_login_hover.svg");
 }
 .register {
   padding: 12px 20px;
@@ -1053,7 +1054,7 @@ margin-bottom: 43px;
   line-height: 18px;
   text-transform: uppercase;
   border-radius: 2px;
-  padding: 11px 34px 9px 33px;
+  padding: 6px 34px 9px 33px;
   white-space: nowrap;
 }
 
@@ -1625,7 +1626,7 @@ p {
 .box-tel-catalog {
   display: block;
   border: 3px solid var(--white);
-  margin-left: 82px;
+  margin-left: 65px;
 }
 
 .tel-header-catalog {
@@ -1669,14 +1670,14 @@ p {
   line-height: 24px;
   text-align: center;
   margin-top: 3px;
-  margin-left: 81px;
+  margin-left: 73px;
 }
 
 
 .name-user {
   position: relative;
   display: block;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 21px;
   font-weight: bold;
   color: var(--black);
@@ -1691,8 +1692,8 @@ p {
   position: absolute;
   width: 20px;
   height: 18px;
-  left: 26px;
-  top: 14px;
+  left: 16px;
+  top: 16px;
   background-image: url("..//img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1703,9 +1704,9 @@ p {
   position: absolute;
   width: 20px;
   height: 17px;
-  right: 11px;
-  top: 16px;
-  background-image: url("..//img/icon_login.svg");
+  right: 17px;
+  top: 17px;
+  background-image: url("..//img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1737,7 +1738,7 @@ p {
 
 .shop {
   position: relative;
-  margin-left: 97px;
+  margin-left: 90px;
   padding-right: 20px;
 }
 
@@ -1746,8 +1747,8 @@ p {
   position: absolute;
   width: 6px;
   height: 6px;
-  right: 2px;
-  top: 6px;
+  right: 5px;
+  top: 8px;
   border-radius: 3px;
   background-color: var(--blue);
 }
@@ -1780,7 +1781,7 @@ p {
   padding: 4px;
   transform: rotate(-45deg);
   top: 5px;
-  right: 20px;
+  right: 17px;
 }
 
 .breadcrumbs-perforat::after {
@@ -1803,7 +1804,7 @@ p {
 /* HEADING */
 
 .catalog-heading {
-  font-size: 30px;
+  font-size: 29px;
   line-height: 30px;
   color: var(--blue);
   background-color: var(--backgroundgrey);
@@ -1861,19 +1862,15 @@ border-radius: 5px;
 }
 
 
-.price {
-  padding-right: 70px;
-  padding-left: 99px;
-}
-
 .type {
-  padding-right: 65px;
+  margin-right: 65px;
+  border-bottom: 1px dotted red;
 }
 
 .function {
-  padding-right: 46px;
+  margin-right: 46px;
+  border-bottom: 1px dotted red;
 }
-
 
 
 .price,
@@ -1883,12 +1880,22 @@ border-radius: 5px;
   opacity: 0.3;
 }
 
+.price {
+  margin-right: 70px;
+  margin-left: 99px;
+  border-bottom: 1px dotted red;
+}
+
+
 .price:hover,
 .type:hover,
 .function:hover {
   color: var(--black);
   opacity: 1;
+  border-bottom: 1px solid var(--red);
 }
+
+
 
 .price:focus,
 .type:focus,
@@ -1897,6 +1904,13 @@ border-radius: 5px;
   opacity: 1;
 }
 
+
+.price:focus,
+.type:focus,
+.function:focus {
+  color: var(--red);
+  border-bottom: none;
+}
 
 
 
@@ -1928,7 +1942,7 @@ border-radius: 5px;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 7px solid var(--red);
+  border-right: 7px solid var(--lightgrey);
   transform: rotate(90deg);
   outline: none;
   font-size: 0;
@@ -1953,23 +1967,56 @@ border-radius: 5px;
 }
 
 
-.btn-up:hover,
+.btn-up:hover {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 7px solid var(--black);
+  transform: rotate(90deg);
+}
+
 .btn-down:hover {
-  color: var(--black);
-  opacity: 1;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 7px solid var(--black);
+  border-left: 4px solid transparent;
+  transform: rotate(270deg);
 }
 
-.btn-up:focus,
+.btn-up:focus {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 7px solid var(--red);
+  transform: rotate(90deg);
+}
+
+
 .btn-down:focus {
-  color: var(--red);
-  opacity: 1;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 7px solid var(--red);
+  border-left: 4px solid transparent;
+  transform: rotate(270deg);
 }
 
+.btn-up:active,
+.btn-down:active {
+  color: var(--red);
+}
 
 /* CONTROLS */
 
 .control-price {
-  font-family: 'ptsansbold';
+  font-family: 'ptsansbolt';
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
@@ -2084,6 +2131,8 @@ border-radius: 5px;
   margin-bottom: 17px;
   margin-top: -14px;
 }
+
+
 /* radio/checkbox */
 
 .chekbox,
@@ -2092,12 +2141,12 @@ border-radius: 5px;
 }
 
 .name-filtr {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 30px;
   color: var(--black);
   text-transform: uppercase;
   margin-left: -14px;
-  font-family: 'ptsansbold';
+  font-family: 'ptsansbolt';
   font-weight: 700;
 }
 
@@ -2165,7 +2214,7 @@ border-radius: 5px;
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: -27px;
   width: 8px;
   height: 8px;
@@ -2173,6 +2222,62 @@ border-radius: 5px;
   border-radius: 50%;
 }
 
+.filter-input-checkbox + label:hover::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: -36px;
+  top: -4px;
+  border: 2px solid var(--checkboxfilter);
+  border-radius: 4px;
+}
+
+
+
+.filter-input-checkbox:checked + label:hover::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -32px;
+  width: 21.72px;
+  height: 16.76px;
+  background-image: url("..//img/cheked-hover.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+
+.filter-input-radio + label:hover::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--checkboxfilter);
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label:hover::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -27px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--checkboxfilter);
+  border-radius: 50%;
+}
+
+.filter-input-radio:disabled + label {
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:disabled + label {
+  opacity: 0.4;
+}
 
 
 /* catalog-poduct */
@@ -2218,9 +2323,7 @@ border-radius: 5px;
 
 
 
-.page-first,
-.page-second,
-.page-third {
+.page-pagination {
   background-color: var(--white);
   color: var(--black);
   font-size: 13px;
@@ -2229,6 +2332,11 @@ border-radius: 5px;
   padding: 10px 15px 10px 15px;
   border-radius: 2px;
 }
+
+.page-pagination:hover {
+  border: 1px solid var(--lightgrey);
+}
+
 
 .page-next {
   background-color: var(--white);
@@ -2242,33 +2350,19 @@ border-radius: 5px;
   font-family: 'ptsans';
 }
 
-.page-first:hover,
-.page-second:hover,
-.page-third:hover,
-.page-next :hover {
+.page-next:hover {
   border: 1px solid var(--lightgrey);
 }
 
-
-.page-first:focus,
-.page-second:focus,
-.page-third:focus,
+.page-pagination:focus,
 .page-next:focus {
   border: 1px solid var(--red);
 }
 
-.page-first:active,
-.page-second:active,
-.page-third:active,
-.page-next:active {
+.first-pagination {
   background-color: var(--red);
+  color: var(--white);
 }
-
-
-.page-first {
-  background-color: var(--red);
-}
-
 
 /* catalog-fon */
 
