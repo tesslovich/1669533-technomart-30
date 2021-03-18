@@ -216,7 +216,6 @@ margin-bottom: 43px;
 .search-header {
   position: relative;
   background-color: var(--shadowblue);
-  outline: none;
   border: none;
   padding-left: 7px;
   color: var(--white);
@@ -432,6 +431,7 @@ margin-bottom: 43px;
   margin: 0 auto;
   padding: 0;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 
@@ -811,7 +811,6 @@ margin-bottom: 43px;
 .btn-back {
   border: none;
   background-color: transparent;
-  outline: none;
   cursor: pointer;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
@@ -831,7 +830,6 @@ margin-bottom: 43px;
 .btn-next {
   border: none;
   background-color: transparent;
-  outline: none;
   cursor: pointer;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -1019,7 +1017,6 @@ margin-bottom: 43px;
   margin-bottom: 10px;
   box-shadow:  inset 0px -3px 0px #367315;
   border-radius: 2px;
-  outline: 0;
   border: none;
 }
 
@@ -1240,7 +1237,6 @@ margin-bottom: 43px;
   padding: 20px;
   border: 0;
   box-shadow:  inset 0px 1px 0px #405069;
-  outline: none;
   font-weight: 700;
 }
 
@@ -1254,7 +1250,6 @@ margin-bottom: 43px;
 .table-button:active {
   background-color: var(--white);
   color: var(--black);
-  outline: none;
 }
 
 .activ-btn {
@@ -1601,7 +1596,6 @@ p {
   padding: 7px 195.79px 9px 195.79px;
   background-color: var(--red);
   color: var(--white);
-  outline: 0;
   border: none;
 }
 
@@ -1610,7 +1604,6 @@ p {
   right: 5px;
   top: 13px;
   background-color: var(--white);
-  outline: 0;
   border: none;
   background-color: transparent;
 }
@@ -1762,6 +1755,7 @@ p {
   font-family: 'ptsans';
   line-height: 18px;
   font-size: 13px;
+  flex-wrap: wrap;
 }
 
 
@@ -1944,7 +1938,6 @@ border-radius: 5px;
   border-left: 2px solid transparent;
   border-right: 7px solid var(--lightgrey);
   transform: rotate(90deg);
-  outline: none;
   font-size: 0;
   background-color: transparent;
 }
@@ -1961,7 +1954,6 @@ border-radius: 5px;
   border-right: 7px solid var(--lightgrey);
   border-left: 4px solid transparent;
   transform: rotate(270deg);
-  outline: none;
   font-size: 0;
   background-color: transparent;
 }
@@ -2066,9 +2058,7 @@ border-radius: 5px;
   background: #00ca74;
 }
 
-.toggle {
-  outline: 0;
-}
+
 .range-controls .toggle {
   position: absolute;
   top: 31px;
@@ -2108,7 +2098,6 @@ border-radius: 5px;
   border: none;
   border-radius: 5px;
   background: var(--backgroundfiltr);
-  outline: 0;
 }
 
 .hyphen {
@@ -2474,7 +2463,6 @@ border-radius: 5px;
   padding: 11px 46px 9px 46px;
   background-color: var(--red);
   color: var(--white);
-  outline: none;
   border: none;
   text-transform: uppercase;
 }
@@ -2484,6 +2472,5 @@ border-radius: 5px;
   text-transform: uppercase;
   background-color: var(--white);
   color: var(--black);
-  outline: none;
   border: none;
 }
