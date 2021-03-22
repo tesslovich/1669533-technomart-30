@@ -1726,6 +1726,11 @@ p {
 }
 
 
+.modal-show {
+  display: block;
+}
+
+
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -1823,7 +1828,6 @@ p {
   position: absolute;
   right: 5px;
   top: 13px;
-  background-color: var(--white);
   border: none;
   background-color: transparent;
 }
