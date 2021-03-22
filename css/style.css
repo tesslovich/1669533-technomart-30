@@ -95,7 +95,6 @@
   margin: 0;
   padding: 0;
   font-family: "Cuprum", "Arial Narrow", sans-serif;
-  font-size: normal;
   line-height: normal;
   font-weight: normal;
   min-height: 100%;
@@ -394,6 +393,7 @@ margin-bottom: 43px;
 
 .login {
   display: inline-block;
+  vertical-align: top;
   color: var(--black);
   background-color: rgba(0, 0, 0, 0.0001);
   font-size: 21px;
@@ -776,6 +776,7 @@ margin-bottom: 43px;
   width: 620px;
   height: 266px;
   background-image: url("../img/fon.jpg");
+  background-color: var(--backgroundfiltr);
 }
 
 
@@ -796,6 +797,7 @@ margin-bottom: 43px;
   width: 620px;
   height: 266px;
   background-image: url("../img/fonn.jpg");
+  background-color: var(--backgroundfiltr);
 }
 
 
@@ -857,6 +859,7 @@ margin-bottom: 43px;
   position: absolute;
   top: 140px;
   left: 25px;
+  vertical-align: top;
   border: solid var(--white);
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -872,6 +875,7 @@ margin-bottom: 43px;
   position: absolute;
   top: -119px;
   left: 42px;
+  vertical-align: top;
   border: solid var(--white);
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -898,6 +902,7 @@ i {
   position: absolute;
   right: -561px;
   top: 249px;
+  vertical-align: top;
   border: solid var(--white);
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -1555,6 +1560,7 @@ p {
 
 
 .footer__nav-list:focus {
+  text-decoration: none;
   color: var(--darkgrey);
   opacity: 0.5;
 }
@@ -1589,6 +1595,7 @@ p {
 
 
 .footer-shop:focus {
+  text-decoration: none;
   color: var(--orange);
   opacity: 0.5;
 }
@@ -1937,6 +1944,7 @@ p {
   font-size: 16px;
   line-height: 18px;
   color: var(--blue);
+  vertical-align: top;
 }
 
 
